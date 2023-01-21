@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantum Dashboard</title>
+    <link rel="stylesheet" href="./styles/card.css" />
+    <link rel="stylesheet" href="./styles/root.css" />
+    <link rel="stylesheet" href="./styles/header-sections.css" />
+    <link rel="stylesheet" href="./styles/footer.css">
+    <style>
+      @font-face {
+        font-family: Quicksand;
+        src: url("../quantum screen assets/Quicksand font 1/static/Quicksand-SemiBold.ttf");
+      }
+    </style>
+    <script>
+      function toggleFav(id){
+        var x = document.getElementById("fav"+id);
+        if (x.style.mixBlendMode !== "luminosity") {
+          x.style.mixBlendMode = "luminosity";
+        } else {
+          x.style.mixBlendMode = "initial";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="dash-container">
+        <ul>
+          <li class="nav-btn-txt"><button class="nav-btn" id="btn-dashboard">dashboard</button></li>
+          <li class="nav-btn-txt"><button class="nav-btn" id="btn-content">content</button></li>
+          <li class="nav-btn-txt"><button class="nav-btn" id="btn-users">users</button></li>
+          <li class="nav-btn-txt"><button class="nav-btn" id="btn-reports">reports</button></li>
+          <li class="nav-btn-txt"><button class="nav-btn" id="btn-admin">admin</button></li>
+          <li>
+            <div class="notification">
+              <button class="nav-btn" id="btn-notification"></button>
+              <div class="icon-badge">2</div>
+            </div>
+          </li>
+          <li>
+            <div class="announcement">
+              <button class="nav-btn" id="btn-announcements"></button>
+              <div class="icon-badge">1</div>
+            </div>
+          </li>
+          <li>
+            <div class="profile">
+              <button class="nav-btn" id="btn-account"></button>
+              <div class="icon-badge">T</div>
+            </div>
+          </li>      
+          <li><button class="menu-btn nav-btn"></button></li>
+        </ul>
+      </div>
+    </header>
+    <section class="section-1">
+      <div class="course-tab">
+        <div>
+          <img src="../quantum screen assets\icons\courses.svg" alt="" />
+        </div>
+        <div>
+          <p><span class="text-bold courses">4 </span> Courses</p>
+        </div>
+      </div>
+      <div class="class-tab">
+        <div>
+          <img src="../quantum screen assets\icons\classes.svg" alt="" />
+        </div>
+        <div>
+          <p><span class="text-bold classes">4 </span> Classes</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-2">
+      <p class="col-grey">Showing <span id="shown-courses">4</span> of <span id="total-courses">4</span> courses</p>
+      <div class="sort">
+        <p class="col-grey">Sort&nbsp;By:</p>
+        <select class="sort-course-name dropdown">
+          <option value="Course Name">Course Name</option>
+          <option value="Class Name">Class Name</option>
+        </select>
+        <div>
+          <button class="btn-bg" id="sort-arrow"></button>
+        </div>
+      </div>
+    </section>
+
+    <div class="course-container" id="coursesdata"></div>
+
+    <footer>
+      <div class="footersection1">
+        <a href="#" class="about">About &nbsp;|&nbsp;</a>
+         <a href="#" class="ContactUs">Contact Us</a>
+      </div>
+      <div class="footersection2">
+        <img
+          src="../quantum screen assets/icons/logo used in footer.svg"
+          alt="footer logo"
+        />
+        <p>
+          &nbsp;| Copyright © 2020-2021 Zeus Systems Pvt. Ltd. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./js/card_details.js"></script>
+  </body>
+</html>

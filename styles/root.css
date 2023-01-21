@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Quicksand;
+    src: url("../quantum screen assets/Quicksand font 1/static/Quicksand-SemiBold.ttf");
+}
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #EEEEEE;
+    font-family: Quicksand;
+}
+.btn-bg,.nav-btn{
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.dropdown{
+    border: none;
+    appearance: none;
+    background-image: url("../quantum screen assets/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: right;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.38);
+    width: 100%;  
+    font-size: 16px;
+    color: #222222;
+}
+.col-green,.col-grey{
+    font-size: 12px;
+}
+
+.col-grey{
+    color: #666666;
+}
+.col-green{
+    color:#1F7A54 ;
+
+}

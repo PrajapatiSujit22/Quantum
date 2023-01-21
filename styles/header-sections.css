@@ -1,0 +1,178 @@
+.dash-container{
+  background-image: url("../quantum screen assets/header pattern svg.svg");
+  height: 56px;
+}
+
+ul{
+  display: flex;
+  justify-content: end;
+  align-items: stretch;
+  height: inherit;
+  list-style: none;
+  margin: 0;
+  background-image: url("../quantum screen assets/icons/logo used in header.svg");
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 28px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+li{
+  display: flex;
+  justify-content: center;
+}
+/*common css*/
+button{
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+/**/
+
+.dash-container li button{
+  color: #3FD28B;
+  margin:0 16px 0 16px;
+  font-size: 14px;
+  font-family: Quicksand;
+  text-transform:uppercase;
+}
+#btn-dashboard{
+  color: #FFFFFF;
+  border-bottom: 3px solid white;
+
+}
+.notification,.announcement,.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-btn{
+  display: none;
+}
+.icon-badge {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+  background: #2A7FF3;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.notification .icon-badge{
+  top: -9px;
+  right: 28px;
+}
+.announcement .icon-badge{
+  top: -9px;
+  right: 20px;
+}
+.profile .icon-badge{
+  background: white;
+  color: black;
+  top: -9px;
+  right: 28px;
+}
+
+#btn-notification{
+  background-image: url("../quantum screen assets/icons/alerts.svg") ;
+  width: 24px;
+  height: 24px;
+  background-size: 24px;
+}
+#btn-announcements{
+  background-image: url("../quantum screen assets/icons/announcements.svg") ;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+}
+#btn-account{
+  background-image: url("../quantum screen assets/icons/account_circle.svg") ;
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+}
+
+
+
+
+.section-1{
+  display: flex;
+  height: 64px;
+  margin: 24px;
+  background-color: #8DDC97;
+}
+.section-1 img{
+  margin-right:8px;
+}
+.class-tab,.course-tab{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.class-tab p,.course-tab p{
+  font-size: 20px;
+}
+.course-tab{
+  border-bottom: 4px solid black;
+}
+.text-bold{
+  font-weight: bold;
+  font-size: 24px;
+}
+
+
+
+
+.section-2{
+  display: flex;
+  height: 45px;
+  margin: 0 24px 0 24px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, .12);
+}
+.sort{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sort .col-grey{
+  margin: 6px 6px 24px 0;
+}
+.sort-course-name {
+  height: 27px;
+  padding: 2px 54px 4px 0;
+  margin: 2px auto 23px auto;
+}
+.sort>div{
+  align-self: baseline;
+}
+#sort-arrow{
+  background-image: url("../quantum screen assets/icons/sort.svg") ;
+  width: 12px;
+  height: 24px;
+  margin-left: 24px;
+}
+
+
+
+
+@media (max-width: 890px) {
+  .menu-btn{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-image: url("../quantum screen assets/icons/hamburger-menu.svg") ;
+    height: 35px;
+    width: 35px;
+    background-size: 35px;
+  }
+  .nav-btn-txt{
+    display: none;
+  }
+}

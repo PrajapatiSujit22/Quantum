@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantam Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="root.css">
+    <style>
+      @font-face {
+        font-family: Quicksand;
+        src: url("../quantum screen assets/Quicksand font 1/static/Quicksand-SemiBold.ttf");
+      }
+    </style>
+    <script>
+      function myFunction(){
+        var x = document.getElementById("myPass");
+        if (x.type === "password") {
+          x.type = "text";
+        } else {
+          x.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header >
+      <div>
+        <img
+          src="../quantum screen assets/icons/logo used in header.svg"
+          alt="header logo"
+        />
+      </div>
+    </header>
+
+    <div class="login-form">
+      <div class="login-data">
+        <div class="login-text">
+          <img
+            src="../quantum screen assets/icons/back.svg"
+            alt="back button logo"
+          />
+          <p class="text">Log in with Quantam</p>
+        </div>
+        <div class="rbtn">
+          <input class="radio-buttons" type="radio" name="District" /><label
+            class="dislabel"
+            >District</label
+          >
+          <input class="radio-buttons" type="radio" name="District" /><label
+            >Independent school</label
+          >
+        </div>
+        <div class="state">
+          <p class="small">State*</p>
+          <select class="sname" id="te">
+            <option value="Alabama">Alabama</option>
+          </select>
+        </div>
+        <div class="district">
+          <p class="small">District*</p>
+          <select class="dname">
+            <option value="Alabama School District">Alabama School District</option>
+          </select>
+        </div>
+        <div>
+          <input type="text" class="username" placeholder="Username/Email ID*">
+          <a href="#" id="forgotname">Forgot Username?</a>
+        </div>
+        <div class="pdiv">
+          <div>
+            <input type="password" id="myPass" class="password" placeholder="Password*">
+            <button class="btn-bg" id="eye-toggle" onclick="myFunction()"></button>
+          </div>
+          <a href="#" id="forgotpassword">Forgot Password?</a>
+        </div>
+        <div class="rememberCheck">
+          <input
+            type="checkbox"
+            name="remember-me"
+            value="remember-me"
+            id="remember"
+          /><label>Remember me</label>
+        </div>
+      </div>
+      <div class="btn"><button type="button">Log In</button></div>
+    </div>
+
+    <footer>
+      <div class="footersection1">
+        <a href="#" class="about">About &nbsp;|&nbsp;</a>
+         <a href="#" class="ContactUs">Contact Us</a>
+      </div>
+      <div class="footersection2">
+        <img
+          src="../quantum screen assets/icons/logo used in footer.svg"
+          alt="footer logo"
+        />
+        <p>
+          &nbsp;| Copyright © 2020-2021 Zeus Systems Pvt. Ltd. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  background: #EEEEEE;
+  height: 798px;
+  width: 100%;
+}
+body label, body p,select ,input,a{
+  font-family: Quicksand;
+}
+body header {
+  height: 56px;
+  background: black url('../quantum screen assets/header pattern svg.svg') 0% 0% repeat padding-box;
+  opacity: 0.8;
+}
+body header img {
+  margin: 11px auto auto 24px;
+}
+.login-form {
+  padding: 0;
+  height: 584px;
+  width: 488px;
+  margin: 50px auto auto auto;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-top: 4px solid #3AC7EC;
+  border-radius: 2px;
+}
+.login-form .login-data {
+  padding: 0 32px;
+}
+.login-form .login-data .login-text {
+  display: flex;
+  font-size: 24px;
+  color: #222222;
+  align-items: flex-end;
+}
+.login-form .login-data .login-text .text {
+  margin-left: 77px;
+}
+.login-form .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+.login-form .btn button {
+  margin-top: 34px;
+  height: 40px;
+  width: 216px;
+  background: #3FD28B 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2392156863);
+  text-transform: uppercase;
+  border: none;
+}
+.login-text .text{
+  margin: 16px auto 0 0;
+}
+.login-form .radio-buttons, .login-form #remember {
+  accent-color: #1F7A54;
+}
+.radio-buttons{
+  width: 20px;
+  height: 24px;
+  margin-right: 8px;
+}
+.login-form #forgotname, .login-form #forgotpassword {
+  display: flex;
+  justify-content: end;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+  color: #1F7A54;
+}
+
+.rbtn {
+  margin: 0;
+  height: 24px;
+  width: 289px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.rbtn .dislabel {
+  margin-right: auto;
+}
+
+.state {
+  margin-top: 23px;
+}
+
+.district {
+  margin-top: 36px;
+}
+
+.state .sname, .district .dname {
+  padding: 5px 0;
+  font-size: 16px;
+  color: #222222;
+}
+
+.small {
+  margin-bottom: 0;
+  font-size: 12px;
+  color: #666666;
+}
+
+.username {
+  margin-top: 56px;
+}
+.password{
+  margin-top: 33px;
+}
+.username, .password {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  color: #666666;
+}
+
+label {
+  font-size: 16px;
+  color: #222222;
+}
+#remember{
+  width: 18px;
+  height: 24px;
+  margin: 24px 5px 0 0;
+}
+.rememberCheck{
+  display: flex;
+  align-items: flex-end;
+}
+.pdiv div{
+  display: flex;
+  align-items: flex-end;
+}
+#eye-toggle{
+  position: absolute;
+  background-image: url("../quantum screen assets/icons/preview.svg");
+  width: 24px;
+  transform: translateX(400px);
+  height: 24px;
+      
+}
